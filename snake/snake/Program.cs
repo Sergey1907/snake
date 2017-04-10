@@ -44,15 +44,14 @@ namespace snake
                     snake.Move();
                 }
 
+                Thread.Sleep(500);
+                snake.Move();
+
                 if (Console.KeyAvailable) 
                 {
                     ConsoleKeyInfo key = Console.ReadKey();
                     snake.HandleKey(key.Key);
                 }
-                Thread.Sleep(900);
-                snake.Move();
-                Thread.Sleep(900);
-                snake.Move();
             }
         }
     }
